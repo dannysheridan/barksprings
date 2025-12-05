@@ -2,6 +2,7 @@
 
 instances:
   - url: barksprings.docs.buildwithfern.com
+    custom-domain: www.barksprings.info
 ai-search:
   location:
     - docs
