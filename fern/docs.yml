@@ -1,0 +1,86 @@
+# yaml-language-server: $schema=https://schema.buildwithfern.dev/docs-yml.json
+
+instances:
+  - url: barksprings.docs.buildwithfern.com
+ai-search:
+  location:
+    - docs
+title: Bark Springs
+layout:
+  searchbar-placement: header
+  page-width: full
+  tabs-placement: header
+tabs:
+  home:
+    display-name: Docs
+    icon: home
+  guides:
+    display-name: Guides
+    icon: book
+navigation:
+  - tab: home
+    layout:
+      - section: Get Started
+        contents:
+          - page: Welcome
+            path: docs/pages/welcome.mdx
+  - tab: guides
+    layout:
+      - section: Get started
+        contents:
+          - page: Overview
+            path: docs/pages/get-started/overview.mdx
+            icon: fa-duotone fa-book-open
+          - page: Quickstart
+            path: docs/pages/get-started/quickstart.mdx
+            icon: fa-duotone fa-rocket
+      - section: Capabilities
+        contents:
+          - page: Plant management
+            path: docs/pages/capabilities/plant-management.mdx
+            icon: fa-duotone fa-seedling
+          - page: Order processing
+            path: docs/pages/capabilities/order-processing.mdx
+            icon: fa-duotone fa-cart-shopping
+          - page: Customer management
+            path: docs/pages/capabilities/customer-management.mdx
+            icon: fa-duotone fa-users
+          - page: Inventory tracking
+            path: docs/pages/capabilities/inventory-tracking.mdx
+            icon: fa-duotone fa-boxes-stacked
+      - section: Tutorials
+        contents:
+          - page: Searching for plants
+            path: docs/pages/tutorials/searching-plants.mdx
+            icon: fa-duotone fa-magnifying-glass
+          - page: Creating your first order
+            path: docs/pages/tutorials/first-order-tutorial.mdx
+            icon: fa-duotone fa-bag-shopping
+          - page: Managing plant inventory
+            path: docs/pages/tutorials/inventory-tutorial.mdx
+            icon: fa-duotone fa-clipboard-list
+      - section: Changelog
+        contents:
+          - changelog: docs/changelog
+navbar-links:
+  - type: minimal
+    text: Fork this repo
+    url: https://github.com/fern-api/docs-starter
+  - type: filled
+    text: Get a demo
+    url: >-
+      https://buildwithfern.com/contact?utm_campaign=demo&utm_medium=plantstore&utm_source=navbar
+  - type: github
+    value: https://github.com/fern-api/fern
+colors:
+  accentPrimary:
+    dark: '#586251'
+    light: '#586251'
+theme:
+  page-actions: toolbar
+  footer-nav: minimal
+logo:
+  dark: docs/assets/logo.png
+  light: docs/assets/logo.png
+  height: 20
+favicon: docs/assets/favicon.png
