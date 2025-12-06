@@ -53,7 +53,6 @@ colors:
 theme:
   footer-nav: minimal
 logo:
-  dark: docs/assets/logo.png
   light: docs/assets/logo.png
   height: 20
 favicon: docs/assets/favicon.png
