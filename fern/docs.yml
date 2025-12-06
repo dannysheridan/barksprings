@@ -48,8 +48,8 @@ navbar-links:
     url: /contact-us
 colors:
   accentPrimary:
-    light: '#586251'
-    dark: '#7a8a6f'
+    light: '#3d4535'
+    dark: '#9fb090'
 theme:
   footer-nav: minimal
 logo:
