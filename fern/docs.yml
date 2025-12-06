@@ -1,3 +1,5 @@
+# yaml-language-server: $schema=https://schema.buildwithfern.dev/docs-yml.json
+
 instances:
   - url: barksprings.docs.buildwithfern.com
     custom-domain: www.barksprings.info
@@ -6,72 +8,49 @@ ai-search:
     - docs
 title: Bark Springs
 layout:
-  searchbar-placement: header
+  searchbar-placement: sidebar
   page-width: full
-  tabs-placement: header
-tabs:
-  home:
-    display-name: Docs
-    icon: home
-  guides:
-    display-name: Guides
-    icon: book
+
+page-actions:
+  options:
+    copy-page: false
+    view-as-markdown: false
+    ask-ai: false
+
 navigation:
-  - tab: home
-    layout:
-      - section: Get Started
-        contents:
-          - page: Welcome
-            path: docs/pages/welcome.mdx
-  - tab: guides
-    layout:
-      - section: Check-In
-        contents:
-          - page: Overview
-            path: docs/pages/get-started/overview.mdx
-            icon: fa-duotone fa-book-open
-          - page: Quickstart
-            path: docs/pages/get-started/quickstart.mdx
-            icon: fa-duotone fa-rocket
-      - section: Using the House
-        contents:
-          - page: Plant management
-            path: docs/pages/capabilities/plant-management.mdx
-            icon: fa-duotone fa-seedling
-          - page: Order processing
-            path: docs/pages/capabilities/order-processing.mdx
-            icon: fa-duotone fa-cart-shopping
-          - page: Customer management
-            path: docs/pages/capabilities/customer-management.mdx
-            icon: fa-duotone fa-users
-          - page: Inventory tracking
-            path: docs/pages/capabilities/inventory-tracking.mdx
-            icon: fa-duotone fa-boxes-stacked
-          - page: If there's an issue
-            path: ./docs/pages/guides/capabilities/if-theres-an-issue.mdx
-      - section: Check-out
-        contents:
-          - page: Searching for plants
-            path: docs/pages/tutorials/searching-plants.mdx
-            icon: fa-duotone fa-magnifying-glass
-      - section: Changelog
-        contents:
-          - changelog: docs/changelog
+  - section: Check-In
+    contents:
+      - page: Overview
+        path: docs/pages/overview.mdx
+        icon: fa-duotone fa-book-open
+  - section: During Your Stay
+    contents:
+      - page: House Rules
+        path: docs/pages/house-rules.mdx
+        icon: fa-duotone fa-home
+      - page: Water System
+        path: docs/pages/water-system.mdx
+        icon: fa-duotone fa-droplet
+  - section: Check-Out
+    contents:
+      - page: Departing
+        path: docs/pages/departing.mdx
+        icon: fa-duotone fa-door-open
+  - section: Support
+    contents:
+      - page: Contact Us
+        path: docs/pages/contact-us.mdx
+        icon: fa-duotone fa-phone
+
 navbar-links:
-  - type: minimal
-    text: Fork this repo
-    url: https://github.com/fern-api/docs-starter
   - type: filled
-    text: Get a demo
-    url: https://buildwithfern.com/contact?utm_campaign=demo&utm_medium=plantstore&utm_source=navbar
-  - type: github
-    value: https://github.com/fern-api/fern
+    text: Contact Us
+    url: /contact-us
 colors:
   accentPrimary:
-    dark: '#586251'
     light: '#586251'
+    dark: '#7a8a6f'
 theme:
-  page-actions: toolbar
   footer-nav: minimal
 logo:
   dark: docs/assets/logo.png
