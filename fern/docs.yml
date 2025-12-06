@@ -31,9 +31,18 @@ navigation:
       - page: Water System
         path: docs/pages/water-system.mdx
         icon: fa-duotone fa-droplet
+      - page: Where are the....
+        path: docs/pages/where-are-the.mdx
+        icon: fa-duotone fa-search
+      - page: House Essentials
+        path: docs/pages/house-essentials.mdx
+        icon: fa-duotone fa-utensils
+      - page: Dogs
+        path: docs/pages/dogs.mdx
+        icon: fa-duotone fa-paw
   - section: Check-Out
     contents:
-      - page: Departing
+      - page: Departure checklist
         path: docs/pages/departing.mdx
         icon: fa-duotone fa-door-open
   - section: Support
