@@ -49,7 +49,6 @@ navbar-links:
 colors:
   accentPrimary:
     light: '#586251'
-    dark: '#7a8a6f'
 theme:
   footer-nav: minimal
 logo:
