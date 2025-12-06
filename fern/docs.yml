@@ -1,5 +1,3 @@
-# yaml-language-server: $schema=https://schema.buildwithfern.dev/docs-yml.json
-
 instances:
   - url: barksprings.docs.buildwithfern.com
     custom-domain: www.barksprings.info
@@ -27,7 +25,7 @@ navigation:
             path: docs/pages/welcome.mdx
   - tab: guides
     layout:
-      - section: Get started
+      - section: Check-In
         contents:
           - page: Overview
             path: docs/pages/get-started/overview.mdx
@@ -35,7 +33,7 @@ navigation:
           - page: Quickstart
             path: docs/pages/get-started/quickstart.mdx
             icon: fa-duotone fa-rocket
-      - section: Capabilities
+      - section: Using the House
         contents:
           - page: Plant management
             path: docs/pages/capabilities/plant-management.mdx
@@ -49,17 +47,13 @@ navigation:
           - page: Inventory tracking
             path: docs/pages/capabilities/inventory-tracking.mdx
             icon: fa-duotone fa-boxes-stacked
-      - section: Tutorials
+          - page: If there's an issue
+            path: ./docs/pages/guides/capabilities/if-theres-an-issue.mdx
+      - section: Check-out
         contents:
           - page: Searching for plants
             path: docs/pages/tutorials/searching-plants.mdx
             icon: fa-duotone fa-magnifying-glass
-          - page: Creating your first order
-            path: docs/pages/tutorials/first-order-tutorial.mdx
-            icon: fa-duotone fa-bag-shopping
-          - page: Managing plant inventory
-            path: docs/pages/tutorials/inventory-tutorial.mdx
-            icon: fa-duotone fa-clipboard-list
       - section: Changelog
         contents:
           - changelog: docs/changelog
@@ -69,8 +63,7 @@ navbar-links:
     url: https://github.com/fern-api/docs-starter
   - type: filled
     text: Get a demo
-    url: >-
-      https://buildwithfern.com/contact?utm_campaign=demo&utm_medium=plantstore&utm_source=navbar
+    url: https://buildwithfern.com/contact?utm_campaign=demo&utm_medium=plantstore&utm_source=navbar
   - type: github
     value: https://github.com/fern-api/fern
 colors:
