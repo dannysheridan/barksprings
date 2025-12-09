@@ -1,5 +1,3 @@
-# yaml-language-server: $schema=https://schema.buildwithfern.dev/docs-yml.json
-
 instances:
   - url: barksprings.docs.buildwithfern.com
     custom-domain: www.barksprings.info
@@ -10,13 +8,11 @@ title: Bark Springs
 layout:
   searchbar-placement: sidebar
   page-width: full
-
 page-actions:
   options:
     copy-page: false
     view-as-markdown: false
     ask-ai: false
-
 navigation:
   - section: Check-In
     contents:
@@ -40,6 +36,8 @@ navigation:
       - page: Dogs
         path: docs/pages/dogs.mdx
         icon: fa-duotone fa-paw
+      - page: Recommendations
+        path: ./docs/pages/during-your-stay/recommendations.mdx
   - section: Check-Out
     contents:
       - page: Departure checklist
@@ -50,7 +48,6 @@ navigation:
       - page: Contact Us
         path: docs/pages/contact-us.mdx
         icon: fa-duotone fa-phone
-
 navbar-links:
   - type: filled
     text: Contact Us
